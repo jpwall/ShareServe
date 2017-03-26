@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.header
+    img.barLogo(src="/images/shareServeBigWhite.png")
+    div(style="margin-right:auto;margin-left:12px;")
+      div(style="font-size:45px;") ShareServe 
+      div(style="font-size:30px;font-style:italic;") A Community-Based Server Marketplace
+    div.signInButton Sign In
+  div.greetingBar#buyBarHome
+    img.homeImage(src="/images/buyServers.png")
+    div.homeTextContainer
+      div.homeTitleText(style="text-align:right;") Need server space?
+      div.homeInfoText(style="text-align:left;text-indent:80px;") Browse the largest online community marketplace for servers! Whatever suits your website, project, or general use case, there is a server for you! View listings and filter the results to your liking below. 
+      div.homeBrowseButton(style="align-self:flex-end;") View Listings
+  div.greetingBar#sellBarHome
+    div.homeTextContainer
+      div.homeTitleText Have server space?
+      div.homeInfoText(style="text-indent:80px;") Be a part of a revolutionary community effort of sharing server space. Market your free server space to potential clients and earn money each month by keeping the server up and running! Easy enough, right? Create a listing below or follow one of the many tutorials HERE!
+      div.homeBrowseButton Create Listing
+    img.homeImage(src="/images/sellServers.png")
