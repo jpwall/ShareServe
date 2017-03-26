@@ -78,7 +78,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 3.5px;
-    background: #444444;
+    //background: #444444;
+    background: rgba(68, 68, 68, 0.8);
     width: auto;
     height: auto;
     font-size: 23px;
