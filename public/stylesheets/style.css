@@ -5,12 +5,13 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-
-    background: url(/images/serverBackground.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: #444444;
+    
+//    background: url(/images/serverBackground.jpg) no-repeat center center fixed;
+//    -webkit-background-size: cover;
+//    -moz-background-size: cover;
+//    -o-background-size: cover;
+//    background-size: cover;
     width: 100%;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -62,6 +63,79 @@ body {
     box-sizing: border-box;
 }
 
+.listingFindFormContainer {
+    width: 100%;
+    min-height: 10vh;
+    //background: blue;
+    //color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    //background: #ba6dff;
+    //background: white;
+    
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: flex;
+    //justify-content: center;
+    //align-items: center;
+    flex-direction: column;
+}
+
+.listingFindForm {
+    display: flex;
+    //align-self: center;
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+select, .updateButton {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    padding: 10px;
+    //color: #ba6dff;
+    color: #396fdb;
+    border: 0;
+    border-radius: 0;
+    background: white;
+    //background: white;
+    margin-left: 5px;
+    border-radius: 2.5px;
+    font-size: 19px;
+}
+
+.listingBarContainer {
+    width: 100%;
+    height: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.listingBar {
+    width: 100%;
+    height: 5vh;
+    background: #666666;
+
+    display: flex;
+    flex-direction: row;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 #buyBarHome {
     //background: #bad1ff;
     background: #7b9bd9;
@@ -89,6 +163,20 @@ body {
     box-sizing: border-box;
 }
 
+.newListingButton {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    background: #51c066;
+    font-size: 30px;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .homeTextContainer {
     width: 53%;
     //height: auto;
@@ -99,7 +187,7 @@ body {
 }
 
 .homeTitleText {
-    //color: white;
+    color: white;
     font-size: 40px;
     margin-bottom: 15px;
 //    font-family: 'Ropa Sans', sans-serif;
