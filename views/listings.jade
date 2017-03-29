@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  div.header(style="background:#7b9bd9;")
+    img.barLogo(src="/images/shareServeBigWhite.png")
+    div(style="margin-right:auto;margin-left:12px;")
+      //div(style="font-size:45px;") ShareServe 
+      //div(style="font-size:30px;font-style:italic;") A Community-Based Server Marketplace
+    div.newListingButton + New
+  div.listingFindFormContainer
+    div.homeTitleText(style="color:white;") Find Listings
+    form.listingFindForm
+      select
+        option(value="null") Any CPU Core
+        option(value="1") 1 (10)
+        option(value="2") 2 (42)
+        option(value="3") 3 (2)
+        option(value="4") 4 (8)
+        option(value="8") 8 (3)
+      select
+        option(value="null") Any HD Size
+        option(value="40") 40GB (30)
+        option(value="400") 400GB (10)
+        option(value="500") 500GB (2)
+      select
+        option(value="null") Any RAM
+        option(value="2") 2GB (40)
+        option(value="8") 8GB (4)
+      select
+        option(value="null") Any Net Speed
+        option(value="5") 5MB/S (35)
+        option(value="10") 10MB/S (5)
+      select
+        option(value="null") Any OS
+        option(value="Debian_Stable") Debian Stable (25)
+        option(value="Ubuntu_LTS") Ubuntu LTS (8)
+        option(value="Arch Linux") Arch Linux (5)
+      button.updateButton(type="submit" style="background:#ba6dff;color:white;margin-left:20px;") Update
+  div.listingBarContainer
+    div.listingBar
+    div.listingBar(style="background:#555555;")
+    div.listingBar
+    div.listingBar(style="background:#555555;")
