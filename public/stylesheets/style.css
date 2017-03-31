@@ -130,7 +130,12 @@ select, .updateButton {
 
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
+    padding-left: 3px;
+    padding-right: 3px;
+    
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -163,7 +168,7 @@ select, .updateButton {
     box-sizing: border-box;
 }
 
-.newListingButton {
+.listingButton {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 10px;
@@ -221,6 +226,25 @@ select, .updateButton {
     height: 70%;
 }
 
+.listingItem {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    //background: blue;
+    color: white;
+    
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.listingSeparator {
+    width: 2px;
+    height: 90%;
+    background: black;
+}
 
 @media screen and (max-aspect-ratio: 16/9) {
     .header {

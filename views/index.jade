@@ -3,7 +3,8 @@ extends layout
 block content
   body(style="background: url(/images/serverBackground.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;")
     div.header
-      img.barLogo(src="/images/shareServeBigWhite.png")
+      a(href="/")
+        img.barLogo(src="/images/shareServeBigWhite.png")
       div(style="margin-right:auto;margin-left:12px;")
         div(style="font-size:45px;") ShareServe 
         div(style="font-size:30px;font-style:italic;") A Community-Based Server Marketplace
@@ -13,7 +14,7 @@ block content
       div.homeTextContainer
         div.homeTitleText(style="text-align:right;") Need server space?
         div.homeInfoText(style="text-align:left;text-indent:80px;") Browse the largest online community marketplace for servers! Whatever suits your website, project, or general use case, there is a server for you! View listings and filter the results to your liking below. 
-        a.homeBrowseButton(href="/listings" style="align-self:flex-end;text-decoration:none;") View Listings
+        a.homeBrowseButton(href="/listings/" style="align-self:flex-end;text-decoration:none;") View Listings
     div.greetingBar#sellBarHome
       div.homeTextContainer
         div.homeTitleText Have server space?

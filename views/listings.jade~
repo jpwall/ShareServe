@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div.header(style="background:#7b9bd9")
+    img.barLogo(src="/images/shareServeBigWhite.png")
+    div(style="margin-right:auto;margin-left:12px;")
+      //div(style="font-size:45px;") ShareServe 
+      //div(style="font-size:30px;font-style:italic;") A Community-Based Server Marketplace
+    div.newListingButton +
