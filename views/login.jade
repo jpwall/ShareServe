@@ -10,15 +10,15 @@ block content
       div.homeTextContainer(style="width:auto;align-items:center;")
         div.homeTitleText Login
         form.signInForm
-          input(type="text" value="Username")
-          input(type="text" value="Password")
+          input(type="text" name="username" placeholder="Username")
+          input(type="password" name="password" placeholder="Password")
         div.listingButton(style="font-size:20px;color:white;width:auto;") Log In
       div.homeTextContainer(style="width:auto;align-items:center;")
         div.homeTitleText Sign Up
         form.signInForm
-          input(type="text" value="Username")
-          input(type="text" value="Email")
-          input(type="text" value="Password")
-          input(type="text" value="Confirm Password")
+          input(type="text" name="username" placeholder="Username")
+          input(type="email" name="email" placeholder="Email")
+          input(type="password" name="password" placeholder="Password")
+          input(type="password" name="passwordConfirm" placeholder="Confirm Password")
         div.listingButton(style="font-size:20px;color:white;width:auto;") Sign Up
   
