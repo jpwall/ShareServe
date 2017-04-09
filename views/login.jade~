@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  body(style="background: url(/images/serverBackground.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;")
+    div.header(style="background-color:rgba(186,109,255,0.9);")
+      a(href="/")
+        img.barLogo(src="/images/shareServeBigWhite.png")
+      div(style="margin-right:auto;margin-left:12px;")
+    div.loginContainer
+      div.homeTextContainer(style="margin-left:auto;justify-self:flex-end;text-align:right;")
+        div.homeTitleText Login
+        form.signInForm
+          input(type="text" value="Username")
+          input(type="text" value="Password")
+        div.listingButton(style="font-size:20px;color:white;width:auto;height:auto;") Log In
+    div.separator
+    div.loginContainer
+      div.homeTextContainer
+        div.homeTitleText Sign Up
+        form.signInForm
+          input(type="text" value="Username" style="align-self:flex-start;")
+          input(type="text" value="Email" style="align-self:flex-start;")
+          input(type="text" value="Password" style="align-self:flex-start;")
+          input(type="text" value="Confirm Password" style="align-self:flex-start;")
+        div.listingButton(style="font-size:20px;color:white;width:auto;height:auto;") Sign Up
+        
+  
