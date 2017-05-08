@@ -12,15 +12,16 @@ block content
       div.homeTextContainer(style="width:auto;align-items:center;")
         div.homeTitleText Login
         form.signInForm
-          input(type="text" name="username" placeholder="Username")
-          input(type="password" name="password" placeholder="Password")
+          input.signInInput(type="text" name="username" placeholder="Username")
+          input.signInInput(type="password" name="password" placeholder="Password")
         div.listingButton(style="font-size:20px;color:white;width:auto;") Log In
+      div(style="width:2px;height:85%;background:white;")
       div.homeTextContainer(style="width:auto;align-items:center;")
         div.homeTitleText Sign Up
         form.signInForm
-          input(type="text" name="username" placeholder="Username")
-          input(type="email" name="email" placeholder="Email")
-          input(type="password" name="password" placeholder="Password")
-          input(type="password" name="passwordConfirm" placeholder="Confirm Password")
+          input.signInInput(type="text" name="username" placeholder="Username")
+          input.signInInput(type="email" name="email" placeholder="Email")
+          input.signInInput(type="password" name="password" placeholder="Password")
+          input.signInInput(type="password" name="passwordConfirm" placeholder="Confirm Password")
         div.listingButton(style="font-size:20px;color:white;width:auto;") Sign Up
   
