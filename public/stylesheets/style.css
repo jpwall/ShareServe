@@ -94,6 +94,41 @@ body {
     box-sizing: border-box;
 }
 
+.newListingItem {
+    width: 70%;
+    height: auto;
+
+    color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-top: 3px solid white;    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.newListingItemContainer {
+    width: auto;
+    height: auto;
+    /*
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 17%;
+    padding-right: 17%;
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .listingFindFormContainer {
     width: 100%;
     min-height: 10vh;
@@ -123,6 +158,12 @@ body {
     margin-right: auto;
 }
 
+.newListingFormInline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 select, .updateButton {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -140,7 +181,7 @@ select, .updateButton {
     font-size: 19px;
 }
 
-input {
+.signInInput {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -156,6 +197,21 @@ input {
     margin-bottom: 8px;
 }
 
+.countInput {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 140px;
+    display: flex;
+    padding: 10px;
+    color: rgb(186, 109, 255);
+    background: white;
+    border: 0;
+    border-radius: 2.5px;
+    font-size: 19px;
+    margin-left: 4px;
+}
+
 .listingBarContainer {
     width: 100%;
     height: auto;
@@ -168,6 +224,14 @@ input {
 
     display: flex;
     flex-direction: column;
+}
+
+#userListings {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 70%;
 }
 
 .listingBar {
@@ -186,6 +250,15 @@ input {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+#userListingBar {
+    margin-left:5%;
+}
+
+#topListingBar {
+    color: #fcd7a6;
+    font-weight: bold;
 }
 
 #buyBarHome {
@@ -245,6 +318,10 @@ input {
 //    font-family: 'Ropa Sans', sans-serif;
 }
 
+#newListingText {
+    font-size: 30px;
+}
+
 .homeInfoText {
     font-size: 23px;
     margin-bottom: 15px;
@@ -291,6 +368,62 @@ input {
     width: 2px;
     height: 90%;
     background: black;
+}
+
+.userContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 12%;
+    height: auto;
+}
+
+.dashboardContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 80vh;
+//    background: blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 1%;
+}
+
+.dashboardLeftSidebar {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    padding-right: 4%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+
+.dashboardEditTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 11%;
+}
+.dashboardBio {
+    height: 78%;
+}
+.dashboardCity {
+    height: 11%;
+}
+
+#dashboard {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
