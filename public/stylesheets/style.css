@@ -118,12 +118,6 @@ body {
 .newListingItemContainer {
     width: auto;
     height: auto;
-    /*
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    padding-left: 17%;
-    padding-right: 17%;
-    */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -424,6 +418,15 @@ select, .updateButton {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+}
+
+#ratingContainer {
+    flex-direction: column;
+    align-items: left;
+    border: none;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
