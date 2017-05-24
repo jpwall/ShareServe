@@ -1,5 +1,6 @@
 extends layout
-
+head
+  script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js")
 block content
   div.header(style="background:#7b9bd9;")
     a(href="/")
@@ -50,25 +51,29 @@ block content
       div.listingItem#topListingBar User
       div.listingItem#topListingBar Placeholder?
     div.listingBar
-      div.listingItem 4 Cores
-      div.listingSeparator
-      div.listingItem 400GB
-      div.listingSeparator
-      div.listingItem 8GB RAM
-      div.listingSeparator
-      div.listingItem 10MB/S
-      div.listingSeparator
-      div.listingItem Debian Stable
-      div.listingSeparator
-      div.listingItem Placeholder
-      div.listingSeparator
-      div.listingItem Placeholder
-      div.listingSeparator
-      div.listingItem(style="color:#51c066;") $8.50
-      div.listingSeparator
-      div.listingUser(style="color:#ce96ff;") jpwall
-      div.listingSeparator
-      div.listingButton(style="font-size:20px;color:white;") View Listing
+      div.listingItems
+        div.listingItem 4 Cores
+        div.listingSeparator
+        div.listingItem 400GB
+        div.listingSeparator
+        div.listingItem 8GB RAM
+        div.listingSeparator
+        div.listingItem 10MB/S
+        div.listingSeparator
+        div.listingItem Debian Stable
+        div.listingSeparator
+        div.listingItem Placeholder
+        div.listingSeparator
+        div.listingItem Placeholder
+        div.listingSeparator
+        div.listingItem(style="color:#51c066;") $8.50
+        div.listingSeparator
+        div.listingUser(style="color:#ce96ff;") jpwall
+        div.listingSeparator
+        
+      input.listingButton#toggle(type="checkbox" checked style="font-size:20px;color:white;display:none;visibility:hidden;")
+      label(for="toggle") Show Info
+      div.listingExpand
     div.listingBar(style="background:#555555;")
       div.listingItem 4 Cores
       div.listingSeparator

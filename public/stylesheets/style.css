@@ -99,11 +99,11 @@ body {
     height: auto;
 
     color: white;
-    padding-top: 1.5%;
+    padding-top: 1%;
     padding-bottom: 1.5%;
     padding-left: 1%;
     padding-right: 1%;
-    border-top: 3px solid white;    
+    //border-top: 1px solid white;    
 
     display: flex;
     flex-direction: row;
@@ -395,6 +395,8 @@ select, .updateButton {
     padding-right: 4%;
     width: 30%;
 
+    //min-height: 75vh;
+    
     display: flex;
     flex-direction: column;
     border-right: 1px solid white;
@@ -427,6 +429,34 @@ select, .updateButton {
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 1%;
+}
+
+input[type=radio] {
+    background: blue;
+}
+
+.progressBar {
+    width: 100%;
+    height: 35px;
+    background: #7b9bd9;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.progressStep {
+    color: white;
+    width: 33.33%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 1%;
+    border-right: solid white 2px;
+    display: flex;
+    align-items: center;
+}
+
+a.newListingItem:hover {
+    background: #666666;
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
