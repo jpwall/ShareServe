@@ -14,6 +14,26 @@ router.get('/newListing/', function(req, res, next) {
     res.render('newListingPre');
 });
 
+router.get('/newHomeServer', function(req, res, next) {
+    res.render('newListing');
+});
+
+router.get('/newPerformanceServer', function(req, res, next) {
+    res.render('newListing');
+});
+
+router.get('/newGraphicsServer', function(req, res, next) {
+    res.render('newListing');
+});
+
+router.get('/newServer2', function(req, res, next) {
+    res.render('newListing2');
+});
+
+router.get('/newListingAvailability', function(req, res, next) {
+    res.render('newListingAvailability');
+});
+
 router.get('/login/', function(req, res, next) {
     res.render('login');
 });
